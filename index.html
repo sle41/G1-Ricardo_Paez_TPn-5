@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico n°5</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+    <head>
+        <h1 id="h1" class="title">TRABAJO PRÁCTICO n°5</h1>
+    </head>
+
+    <main class="main">
+        <div class="div_Ejercicio1">
+            <button class="Ejercicio1" type="submit" id="idh1" onclick="ver_h1()">Ejercicio</button>
+        </div>
+        <br>
+
+        <div class="container">
+            <form id="add-product" class="product-form" onsubmit="addProduct(event)">
+                <div class="input-box">
+                    <label for="nameLabel">Nombre</label>
+                    <br>
+                    <input type="text" name="name" id="nameLabel" onchange="nom_propio()" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="descLabel">Apellido</label>
+                    <br>
+                    <input type="text" name="description" id="descLabel" onchange="ape_propio()" required>
+                </div>
+
+                <div>
+                    <button type="submit" id="boton_carga">Cargar Producto</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container">    
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Eliminar</th>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+
+            <div class="container">
+                    <div class="input-box">
+                            <label for="nameLabel">Buscar persona</label>
+                            <br>
+                            <!-- <label for="nameLabel">Buscar:</label> -->
+                            <input class="buscar-input" type="text" name="name" id="lbuscar">   <br>
+                            <button type="submit" id="buscar" onclick="filtro()">Buscar</button>
+                    </div>
+            </div>
+
+                <div class="container">
+                        <h2>Eliminar el LocalStorage</h2>
+                    <label for="nameLabel">Obtener código de eliminación</label> <br>
+                    <button type="submit" id="elimina" onclick="random_()">Generar</button>
+                    <br>
+                    <div class="container-item_eliminacion">
+                        <label for="nameLabel">Codigo de eliminación</label>
+                        <br>
+                        <input type="text" name="name" id="random">
+                        <br>
+                        <label for="nameLabel">Ingrese su código aquí</label>
+                        <br>
+                        <input type="text" name="name" id="valida" >
+                        <br>
+                        <button type="submit" id="elimina" onclick="eliminoLS()">EliminarLS</button>
+                    </div>
+                </div>
+        </main>
+        <footer>
+        </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="/js/object.js"></script> -->
+    <script src="/JS/main.js"></script>
+</body>
+</html>

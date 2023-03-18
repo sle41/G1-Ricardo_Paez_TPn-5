@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 1rem;
+}
+
+body{
+    background:blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.div_Ejercicio1 {
+    border: 1px solid violet;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Ejercicio1 {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.Ejercicio1:hover {
+    background-color: rgb(43, 255, 11);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    border: 1px solid violet;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.container-item {
+    margin: 1rem;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(43, 255, 11);
+    color: black;
+}
+
+.styled-table { 
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-size: 1em; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)}
+
+    .styled-table thead tr { 
+        background-color: #980081;
+        color: #ffffff;
+        text-align: middle; }
+
+    .styled-table th, .styled-table td { 
+        padding: 12px 15px; }
+
+    .styled-table tbody tr { 
+        border-bottom: 1px solid #dddddd; } 
+    
+    .styled-table tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    color: #980081;}
+        
+    .styled-table tbody tr:last-of-type { 
+        border-bottom: 2px solid #009879; }
+
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.container-item_eliminacion {
+    padding-top: 2rem;
+}
